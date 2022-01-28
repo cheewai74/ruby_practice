@@ -1,0 +1,7 @@
+Modules are Ruby’s solution to multiple inheritance. 
+Modules can be containers of methods that are out of place elsewhere in your code
+
+When to use Modules and inheritance
+1. Is a relationship: inheritance
+2. Can do relationship: Modules
+3. "include" reserved word followed by the module name

@@ -1,0 +1,1 @@
+https://medium.com/launch-school/the-basics-of-oop-ruby-26eaa97d2e98#:~:text=Ruby%20is%20an%20object%2Doriented,main%20properties%3A%20states%20and%20behaviours.
