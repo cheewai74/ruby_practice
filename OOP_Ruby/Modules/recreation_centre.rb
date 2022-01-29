@@ -5,7 +5,9 @@ module Swimmable
 end
 
 class GreenSpace
-    attr_reader :name, :num_trees
+    # Getter
+    attr_reader :name, :num_trees  
+    
     def initialize(name, num_trees)
         @name = name
         @num_trees = num_trees

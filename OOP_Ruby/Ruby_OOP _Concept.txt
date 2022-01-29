@@ -5,3 +5,14 @@ When to use Modules and inheritance
 1. Is a relationship: inheritance
 2. Can do relationship: Modules
 3. "include" reserved word followed by the module name
+
+attr_reader is the short-form way to create a reader method, 
+attr_writer will create a writer method, and 
+attr_accessor will create both.
+
+Self refers to the calling object, 
+which for us can mean a specific instance of the class, 
+or the class itself, depending on where it’s used
+
+@variable -- working with an instance variable
+@@variable -- Working with a class variable
