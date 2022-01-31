@@ -1,3 +1,21 @@
 gem install rspec
 
 rspec spec spec\hello_world_spec.rb
+
+https://bundler.io/
+
+Cmder:
+1. bundle init
+2. update Gemfile and save Gemfile.
+   gem 'rspec', '~>3.0'
+3. bundle binstubs rspec-core
+4. bin\rspec --init
+
+
+Others
+gem update --system
+bundle update --bundler
+gem install bundler:2.1.4 --default
+
+
+bundle exec rspec spec/*
