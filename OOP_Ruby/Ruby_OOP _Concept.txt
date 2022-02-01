@@ -6,9 +6,29 @@ When to use Modules and inheritance
 2. Can do relationship: Modules
 3. "include" reserved word followed by the module name
 
+Attribute:
 attr_reader is the short-form way to create a reader method, 
 attr_writer will create a writer method, and 
 attr_accessor will create both.
+
+=====================================================
+| attr_reader :name     |   def name                |
+|                       |       @name               |
+|                       |   end                     |
+=====================================================
+| attr_writer :name     |   def name=(new_value)    |
+|                       |       @name = new_value   |
+|                       |   end                     |
+=====================================================
+| attr_accessor : name  |    def name               |  
+|                       |       @name               | 
+|                       |    end                    |   
+|                       |                           |
+|                       |   def name=(new_value)    |
+|                       |       @name = new_value   |
+|                       |   end                     |  
+=====================================================  
+
 
 Self refers to the calling object, 
 which for us can mean a specific instance of the class, 
