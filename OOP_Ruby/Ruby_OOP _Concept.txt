@@ -36,3 +36,10 @@ or the class itself, depending on where it’s used
 
 @variable -- working with an instance variable
 @@variable -- Working with a class variable
+
+super 
+1. super calls the overriden method with the 
+same arguments the overriding method recieved.
+2. But super() calls the overriden method 
+with no arguments, even if the overriding method
+did recieve arguments.

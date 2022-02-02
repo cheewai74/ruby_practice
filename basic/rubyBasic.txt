@@ -1,0 +1,11 @@
+block
+A block is always invoked from a function with the same name as 
+that of the block. This means that if you have a block with the 
+name test, then you use the function test to invoke this block
+
+You invoke a block by using the yield statement.
+
+def test
+    yield
+end
+test{puts "Hello world"}
