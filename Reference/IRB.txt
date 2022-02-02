@@ -1,0 +1,11 @@
+100.class   --> return integer
+100.next    --> return 101
+
+# Append
+irb(main):008:0> greeting ="Hello"
+=> "Hello"
+irb(main):009:0> greeting << ' '
+=> "Hello "
+irb(main):010:0> greeting << 'world'
+=> "Hello world"
+irb(main):011:0>
