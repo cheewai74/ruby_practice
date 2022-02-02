@@ -9,3 +9,5 @@ irb(main):009:0> greeting << ' '
 irb(main):010:0> greeting << 'world'
 => "Hello world"
 irb(main):011:0>
+
+95.upto(100) { |num| print num, " " }
