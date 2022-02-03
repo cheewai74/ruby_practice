@@ -11,3 +11,27 @@ irb(main):010:0> greeting << 'world'
 irb(main):011:0>
 
 95.upto(100) { |num| print num, " " }
+
+irb(main):001:0> [1,2,3].include?(2)
+=> true
+irb(main):002:0> x=4
+=> 4
+irb(main):003:0> !x
+=> false
+irb(main):004:0> x.nil?
+=> false
+irb(main):005:0> 2.between?(1,5)
+=> true
+irb(main):006:0> [1,2,3].empty?
+=> false
+irb(main):007:0> hash={'a'=>1, 'b'=>2}
+=> {"a"=>1, "b"=>2}
+irb(main):008:0> hash.has_key?('a')
+=> true
+irb(main):009:0> hash.has_key?(:a)
+=> false
+irb(main):010:0> hash.has_value?(1)
+=> true
+irb(main):011:0> hash.has_value?(5)
+=> false
+irb(main):012:0>
