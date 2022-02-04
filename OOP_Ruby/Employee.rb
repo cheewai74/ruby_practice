@@ -57,7 +57,10 @@ class HourlyEmployee < Employee
     attr_reader :hourly_wage, :hours_per_week
 
     def initialize(name="Anoynous", hourly_wage=0.0, hours_per_week=0.0)
-        self.name = name
+        
+        # self.name = name
+        super(name)
+
         self.hourly_wage = hourly_wage
         self.hours_per_week = hours_per_week
     end
@@ -87,6 +90,57 @@ class HourlyEmployee < Employee
         puts "Pay this period: #{formatted_pay}"
     end
 
+    def turn_into_cashier
+        self.hourly_wage  = 12.75
+        self.hours_per_week = 25
+    end
+
+    def self.security_guard(name)
+        # calling a class method  MyClass.new
+        HourlyEmployee.new(name, 19.5, 30)
+    end
+
+    def self.cashier(name)
+        HourlyEmployee.new(name, 12.75, 25)
+    end
+
+    def self.janitor(name)
+        HourlyEmployee.new(name, 10.50, 20)
+    end
+
+end
+
+class SalariedEmployee < Employee
+
+    attr_reader :salary
+
+    def salary=(salary)
+        if salary < 0
+            raise "A salary of #{salary} isn't valid!"
+        end
+        @salary = salary
+    end
+
+    def initialize(name="Anoymous", salary=0.0)
+
+        # Call the super class initialize method, passing only the name
+        super(name)
+        # Set the salary ourselves, since it's specific to this class
+        self.salary = salary
+
+    end
+
+
+    def print_pay_stub
+
+        # Have the superclass print the name
+        print_name
+        # Calculate 2 weeks pay
+        pay_for_period = (salary / 365.0) * 14
+        formatted_pay = format("%0.2f", pay_for_period)
+        puts "Pay this period: #{formatted_pay}"
+    end
+
 end
 
 amy = Employee.new
@@ -103,3 +157,17 @@ hourly_employee.name = "John Smith"
 hourly_employee.hourly_wage = 14.97
 hourly_employee.hours_per_week = 30
 hourly_employee.print_pay_stub
+
+ivan = HourlyEmployee.new("Ivan Stokes")
+ivan.turn_into_cashier
+ivan.print_pay_stub
+
+angela = HourlyEmployee.security_guard("Angel Mattews")
+angela.print_pay_stub
+edwin = HourlyEmployee.janitor("Edwin Burgess")
+edwin.print_pay_stub
+ivan = HourlyEmployee.cashier("Ivan Stokes")
+ivan.print_pay_stub
+
+salaried_employee = SalariedEmployee.new("Sam Tong", 50000)
+salaried_employee.print_pay_stub
