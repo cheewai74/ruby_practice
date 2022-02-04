@@ -1,0 +1,22 @@
+MiniTest
+MiniTest does have to be installed via bundler.
+MiniTest can handle both TDD and BDD syntax.
+
+RSpec
+RSpec is purely BBD
+Spec files are must end with _spec.rb
+
+rspec --init
+create   .rspec
+create   spec/spec_helper.rb
+
+spec_helper.rb is a file to change the configuration of how we want
+RSpec to behave.
+
+../ means go up one directory where ./ means within the
+current directory
+
+At cmder:
+E.g: 
+1. cd C:\Users\moses\OneDrive\Documents\ruby_practice\BDDTest\rspec_example\spec
+2. rspec
