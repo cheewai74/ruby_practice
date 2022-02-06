@@ -11,3 +11,8 @@ https://gorails.com/series/import-and-export-csv-files
 https://www.udemy.com/course/ruby-on-rails-a-beginners-guide-free/learn/lecture/4771944#overview
 
 https://github.com/schesnowitz/Ruby-on-Rails-a-Beginners-Guide
+
+Doc Reference
+http://www.rubydoc.info
+http://ruby-doc.org
+http://docs.ruby-lang.org

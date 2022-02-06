@@ -9,3 +9,10 @@ def test
     yield
 end
 test{puts "Hello world"}
+
+#each {|item|...} => Object
+#each => Enumerator
+
+File.open("review.txt) do |review_file| # <== File object is passed as a parameter to the block
+    lines = review_file.readlines
+end # <== When the block finishes, the file is automatically closed for you
