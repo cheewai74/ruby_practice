@@ -1,0 +1,25 @@
+<title> :   The page title to display in the browser tab.
+<h1>    :   A level-one heading. Usually shown in large, bold text.
+<ul>    :   An unordered list (usually shown as bullet points).
+<li>    :   A list item. Several of these are nested between the <ul> tags to form the list.
+<a>     :   Stands for "anchor". Create a link
+
+<form>  :   This tag encloses all the other form components
+<label> :   A label for one of the form inputs. The value of its attribute 
+            needs to match the name attribute of the input elements.
+<input> :   With a type attribute of "text": A text field where the user can 
+            enter a string. It's name attribute will be used to label the 
+            field value in the data sent to the server.
+            With a type attribute of "submit": Creates a button that the user 
+            can click to submit the form's data.
+<table> :   This tag encloses all the other table components
+<tr>    :   Stands for table rows
+<td>    :   Stands for table data
+
+                    <table>     
+    -----------------------------------------
+<tr>|   <td></td>       |   <td></td>       |
+    -----------------------------------------
+<tr>|   <td></td>       |   <td></td>       |
+    -----------------------------------------
+

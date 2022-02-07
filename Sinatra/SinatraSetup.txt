@@ -4,3 +4,8 @@ gem install puma
 gem install reel
 gem install http
 gem install webrick
+
+ruby -I lib app.rb
+
+ERB
+<% %> # ERB Tag
