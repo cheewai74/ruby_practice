@@ -5,18 +5,25 @@ Ruby Test Tools: MiniTest
 require 'minitest/autorun'
 require_relative '../lib/list_with_commas'
 
-class TestListWithCommas < MiniTest::Test
+class TestListWithCommas < Minitest::Test
 
+    def setup
+      @list = ListWithCommas.new
+    end
+  
+    def test_it_prints_one_word_alone
+      @list.items = ['apple']
+      assert_equal('apple', @list.join)
+    end
+  
     def test_it_joins_two_words_with_and
-        list = ListWithCommas.new
-        list.items = ['apple','orange']
-        assert('apple and orange' == list.join)
+      @list.items = ['apple', 'orange']
+      assert_equal('apple and orange', @list.join)
     end
-    
-    def test_it_joins_three_words_with_and
-        list = ListWithCommas.new
-        list.items = ['apple','orange','pear']
-        assert('apple, orange and pear' == list.join)
+  
+    def test_it_joins_three_words_with_commas
+      @list.items = ['apple', 'orange', 'pear']
+      assert_equal('apple, orange, and pear', @list.join)
     end
-
-end 
+  
+  end
