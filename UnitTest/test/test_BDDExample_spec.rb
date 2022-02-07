@@ -1,5 +1,8 @@
+"""
+Ruby Test Tools: MiniTest
+"""
 require 'minitest/autorun'
-require_relative './src/hello'
+require_relative '../lib/hello'
 
 describe Hello do
     describe "#Hello" do

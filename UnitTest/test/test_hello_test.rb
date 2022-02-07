@@ -1,10 +1,9 @@
-require 'minitest/autorun'
-require_relative './src/hello'
+require 'test/unit'
+require_relative '../lib/hello'
 
-class HelloTest < Minitest::Test
+class HelloTest < Test::Unit::TestCase
 
     def test_world
-        # TDD "test"
         assert_equal 'world', Hello.world, "Hello.world should return a string called 'world'"
     end
 
