@@ -5,6 +5,8 @@ gem install reel
 gem install http
 gem install webrick
 
+gem install sinatra-contrib
+
 ruby -I lib app.rb
 
 ERB
