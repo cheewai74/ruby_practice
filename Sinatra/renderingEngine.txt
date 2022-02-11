@@ -1,0 +1,8 @@
+Haml http://haml.info/
+ERB http://ruby-doc.org/stdlib/libdoc/erb/rdoc/ERB.html
+Liquid http://liquidmarkup.org/
+Markdown http://daringfireball.net/projects/markdown/
+Textile http://www.textism.com/tools/textile/
+Radius http://radius.rubyforge.org/
+Markaby (Markup as Ruby) http://markaby.rubyforge.org/
+Slim http://slim-lang.com/

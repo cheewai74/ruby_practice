@@ -1,0 +1,3 @@
+
+# find and findall
+(1..10).find{|n| n==5}
