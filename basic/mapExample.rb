@@ -23,3 +23,10 @@ end
 
 cubes = [5,6,7].map{|number|number ** 3 }
 p cubes
+
+fruits = ['apple', 'banana', 'pear']
+y = fruits.map do |fruit|
+    if fruit == 'pear'
+        puts fruit.capitalize
+    end
+end

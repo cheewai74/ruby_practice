@@ -1,0 +1,19 @@
+# Map returns array -( Started out as hash and return as an array for map)
+
+scores = {low: 2, high: 8, avg:6}
+adjusted_scores = scores.map do |k,v|
+    "#{k.capitalize}: #{v * 100}"
+end
+
+# Returns:
+=> ["Low: 200", "High: 800", "Avg: 600"]
+
+x= [1,2,3,4,5] # returns [1, 2, 3, 4, 5]
+y = x.map {|n| n * 50} # returns [50, 100, 150, 200, 250]
+
+
+irb(main):030:0> x.map! {|n| n * 50}
+=> [50, 100, 150, 200, 250]
+irb(main):031:0> x
+=> [50, 100, 150, 200, 250]
+irb(main):032:0>
