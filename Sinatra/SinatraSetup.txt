@@ -15,3 +15,8 @@ ERB
 https://github.com/spbooks/SINATRA1
 
 gem install slim
+gem install sass
+
+gem install sqlite
+gem install data_mapper
+gem install dm-sqlite-adapter

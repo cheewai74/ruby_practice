@@ -1,3 +1,6 @@
 
 E:
-ERB:     embedded Ruby
+ERB:        embedded Ruby
+
+O:
+ORMs:       Object Relational Mappers
