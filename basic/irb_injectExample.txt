@@ -1,0 +1,13 @@
+(1..5).inject{|memo, n| memo + n} # Return 15
+[1,2,3,4,5].inject{|memo, n| memo + n} # Return 15
+[3,5,7].inject{|memo, n| memo * n} # return 105
+[2,4,6].inject{|memo, n| memo ** n} # return 16777216
+
+fruits = ['apple', 'banana', 'pear', 'orange']
+longest = fruits.inject do |memo, fruit|
+    if fruit.length > memo.length
+        fruit
+    else
+        memo
+    end
+end
