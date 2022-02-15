@@ -11,6 +11,7 @@ Cmder:
 3. bundle binstubs rspec-core
 4. bin\rspec --init
 
+rspec -- init
 
 Others
 gem update --system

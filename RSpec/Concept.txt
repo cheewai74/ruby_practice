@@ -1,0 +1,9 @@
+expect( ).to( )
+expect( ).not_to( )
+
+RSpec Hierarchy
+spec file                   car_spec.rb
+    example group               describe
+        nested group                describe / context
+            example                     it  
+                expectation                 expect().to()
