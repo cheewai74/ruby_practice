@@ -3,3 +3,6 @@ rspec spec/car_spec.rb --format documentation
 rspec spec/car_spec.rb --profile
 rspec spec/car_spec.rb --fail-fast
 rspec spec/car_spec.rb:7 # run line 7
+
+rspec spec # run all test
+rspec spec -f d # documentation
